@@ -14,12 +14,12 @@ variables:
 
 steps:
 
-- task: TerraformInstaller@0
-  displayName: install Terraform v0.12.28
+- task: TerraformInstaller@1
+  displayName: install Terraform vv1.3.6
   inputs:
-    terraformVersion: '0.12.28'
+    terraformVersion: 'v1.3.6'
 
-- task: TerraformTaskV1@0
+- task: TerraformTaskV1@1
   displayName: terraform init
   inputs:
     provider: 'azurerm'
@@ -31,7 +31,7 @@ steps:
     backendAzureRmContainerName: '$(container)'
     backendAzureRmKey: '$(tfstateFile)'
 
-- task: TerraformTaskV1@0
+- task: TerraformTaskV1@1
   displayName: terraform plan -out=tfplan
   inputs:
     provider: 'azurerm'
