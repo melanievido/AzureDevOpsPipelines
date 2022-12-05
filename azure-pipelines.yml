@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  subscription: Visual Studio Enterprise(Azure subscription 1)
+  subscription: Visual Studio Enterprise(8d577f05-6c11-4af7-b263-3bbe471ba7cc)
   resourceGroup: resourcegroup-tfstate
   storageAccount: terraformtfstateskippp
   container: tfstate
